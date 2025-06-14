@@ -1,0 +1,27 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+*.cs   text diff=csharp
+*.csproj text
+*.sln  text
+*.md   text
+*.yml  text
+*.json text
+*.xml  text
+*.config text
+*.txt  text
+
+# Binary files
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.dll  binary
+*.exe  binary
+
+# Prevent linguist from classifying generated files as source
+*.Designer.cs linguist-generated
+*.g.cs linguist-generated
+*.g.i.cs linguist-generated
