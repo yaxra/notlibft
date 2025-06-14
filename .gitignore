@@ -4,6 +4,8 @@
 *.userosscache
 *.sln.docstates
 
+*.vcxproj*
+*.sln
 *.userprefs
 
 [Dd]ebug/
