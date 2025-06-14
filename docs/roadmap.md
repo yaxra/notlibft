@@ -4,7 +4,7 @@ Libraries will be done following this sequence as much as possible (where applic
 
 |    |Basic Character / String Functions | Description | 
 |----|-----------|-----------------------------------|
-| ❌ |ft_isalpha | checks if character is alphabetic |
+| ✅ |[ft_isalpha](../src/ft_isalpha.c) | checks if character is alphabetic |
 | ❌ |ft_isdigit | checks if character is a digit|
 | ❌ |ft_isalnum | checks if character is alphanumeric|
 | ❌ |ft_isascii | checks if character is ASCII|
