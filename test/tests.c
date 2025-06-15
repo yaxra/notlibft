@@ -197,7 +197,35 @@ int main(void)
 	test_result(ft_strnstr(str, "!", 11) ==  NULL, "ft_strnstr(\"Hello World\", \"!\", 11)           ", ft_strnstr(str, "!", 11), NULL);
 	test_result(ft_strnstr(str, "Hello World", 11) == str, "ft_strnstr(\"Hello World\", \"Hello World\", 11) ", ft_strnstr(str, "Hello World", 11), str);
 	test_result(ft_strnstr(str, "Hello", 5) == str, "ft_strnstr(\"Hello World\", \"Hello\", 5)        ", ft_strnstr(str, "Hello", 5), str);
-
+	color_string("ft_strnstr tests completed.");
+	printf("\n");
+	// ft_strlcpy
+	color_string("Testing ft_strlcpy function:");
+	char buffer[10];
+	test_result(ft_strlcpy(buffer, "Hello", 5) == 5, "ft_strlcpy(buffer, \"Hello\", 5)        ", ft_strlcpy(buffer, "Hello", 5), '5');
+	test_result(ft_strlcpy(buffer, "World", 10) == 5, "ft_strlcpy(buffer, \"World\", 10)       ", ft_strlcpy(buffer, "World", 10), '5');
+	test_result(ft_strlcpy(buffer, "Hello World", 10) == 11, "ft_strlcpy(buffer, \"Hello World\", 10) ", ft_strlcpy(buffer, "Hello World", 10), '11');
+	test_result(ft_strlcpy(buffer, "Hello", 0) == 5, "ft_strlcpy(buffer, \"Hello\", 0)        ", ft_strlcpy(buffer, "Hello", 0), '5');
+	test_result(ft_strlcpy(buffer, "Hello", 1) == 5, "ft_strlcpy(buffer, \"Hello\", 1)        ", ft_strlcpy(buffer, "Hello", 1), '5');
+	color_string("ft_strlcpy tests completed.");
+	printf("\n");
+	// ft_strlcat
+	color_string("Testing ft_strlcat function:");
+	char dest[20] = "Hello";
+	test_result(ft_strlcat(dest, " World", 20) == 11, "ft_strlcat(dest, \" World\", 20) ", ft_strlcat(dest, " World", 20), '11');
+	char dest2[20] = "Hello World";
+	test_result(ft_strlcat(dest2, "!", 20) == 12, "ft_strlcat(dest2, \"!\", 20)     ", ft_strlcat(dest2, "!", 20), '12');
+	char dest3[20] = "Hello World!";
+	test_result(ft_strlcat(dest3, "Hello", 20) == 17, "ft_strlcat(dest3, \"Hello\", 20) ", ft_strlcat(dest3, "Hello", 20), '17');
+	char dest4[20] = "Hello World!";
+	test_result(ft_strlcat(dest4, "Hello", 5) == 10, "ft_strlcat(dest4, \"Hello\", 5)  ", ft_strlcat(dest4, "Hello", 5), '10');
+	char dest5[20] = "Hello World!";
+	test_result(ft_strlcat(dest5, "Hello", 0) == 5, "ft_strlcat(dest5, \"Hello\", 0)  ", ft_strlcat(dest5, "Hello", 0), '5');
+	char dest6[20] = "Hello World!";
+	test_result(ft_strlcat(dest6, "Hello", 1) == 6, "ft_strlcat(dest6, \"Hello\", 1)  ", ft_strlcat(dest6, "Hello", 1), '6');
+	color_string("ft_strlcat tests completed.");
+	printf("\n");
+	// All Basic Character / String Functions tests completed
 
 	return (0);
 }

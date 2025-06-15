@@ -16,7 +16,7 @@ Libraries will be done following this sequence as much as possible (where applic
 | ✅ |[ft_strrchr](../src/ft_strrchr.c) | finds last occurrence of character in string|
 | ✅ |[ft_strncmp](../src/ft_strncmp.c) | compares strings up to n bytes|
 | ✅ |[ft_strnstr](../src/ft_strnstr.c) | finds substring in string|
-| ❌ |ft_strlcpy | copies string with size limit|
+| ✅ |[ft_strlcpy](../src/ft_strlcpy.c) | copies string with size limit|
 | ❌ |ft_strlcat | concatenates strings with size limit|
 
 |     |Memory Functions | Description |
