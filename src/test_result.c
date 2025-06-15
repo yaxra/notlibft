@@ -5,11 +5,11 @@
 #define RED     "\033[0;31m"
 #define RESET   "\033[0m"
 
-void test_result(int condition, const char* message, int result) {
+void test_result(int condition, const char* message, int result, const char* expected) {
 	if (condition) {
 		printf(GREEN "[+] " RESET "%s: %d\n", message, result);
 	}
 	else {
-		printf(RED "[-] " RESET "%s: %d (Expected: %d)\n\n", message, result, !result);
+		printf(RED "[-] " RESET "%s: %d (Expected: %s)\n", message, result, expected);
 	}
 }

@@ -5,16 +5,16 @@ Libraries will be done following this sequence as much as possible (where applic
 |    |Basic Character / String Functions | Description | 
 |----|-----------|-----------------------------------|
 | ✅ |[ft_isalpha](../src/ft_isalpha.c) | checks if character is alphabetic |
-| ❌ |ft_isdigit | checks if character is a digit|
-| ❌ |ft_isalnum | checks if character is alphanumeric|
-| ❌ |ft_isascii | checks if character is ASCII|
-| ❌ |ft_isprint | checks if character is printable|
-| ❌ |ft_toupper | converts to uppercase|
-| ❌ |ft_tolower | converts to lowercase|
-| ❌ |ft_strlen | string length|
-| ❌ |ft_strchr | finds first occurrence of character in string|
-| ❌ |ft_strrchr | finds last occurrence of character in string|
-| ❌ |ft_strncmp | compares strings up to n bytes|
+| ✅ |[ft_isdigit](../src/ft_isdigit.c) | checks if character is a digit|
+| ✅ |[ft_isalnum](../src/ft_isalnum.c) | checks if character is alphanumeric|
+| ✅ |[ft_isascii](../src/ft_isascii.c) | checks if character is ASCII|
+| ✅ |[ft_isprint](../src/ft_isprint.c) | checks if character is printable|
+| ✅ |[ft_toupper](../src/ft_toupper.c) | converts to uppercase|
+| ✅ |[ft_tolower](../src/ft_tolower.c) | converts to lowercase|
+| ✅ |[ft_strlen](../src/ft_strlen.c) | string length|
+| ✅ |[ft_strchr](../src/ft_strchr.c) | finds first occurrence of character in string|
+| ✅ |[ft_strrchr](../src/ft_strrchr.c) | finds last occurrence of character in string|
+| ✅ |[ft_strncmp](../src/ft_strncmp.c) | compares strings up to n bytes|
 | ❌ |ft_strnstr | finds substring in string|
 | ❌ |ft_strlcpy | copies string with size limit|
 | ❌ |ft_strlcat | concatenates strings with size limit|
