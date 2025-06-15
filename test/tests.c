@@ -188,7 +188,16 @@ int main(void)
 	test_result(ft_strncmp("Hello", "Hello World", 5) == 0, "ft_strncmp(\"Hello\", \"Hello World\", 5) ", ft_strncmp("Hello", "Hello World", 5), '0');
 	test_result(ft_strncmp("ab\0c", "ab\0d", 4) == 0, "ft_strncmp(\"ab\\0c\", \"ab\\0d\", 4)       ", ft_strncmp("ab\0c", "ab\0d", 4), '0');
 	test_result(ft_strncmp("Hello", "HelLo", 5) == 32, "ft_strncmp(\"Hello\", \"HelLo\", 5)       ", ft_strncmp("Hello", "HelLo", 5), '32');
-	
+	color_string("ft_strncmp tests completed.");
+	printf("\n");
+	// ft_strnstr
+	color_string("Testing ft_strnstr function:");
+	test_result(ft_strnstr(str, "World", 11) == str + 6, "ft_strnstr(\"Hello World\", \"World\", 11)       ", ft_strnstr(str, "World", 11), str + 6);
+	test_result(ft_strnstr(str, "Hello", 11) == str, "ft_strnstr(\"Hello World\", \"Hello\", 11)       ", ft_strnstr(str, "Hello", 11), str);
+	test_result(ft_strnstr(str, "!", 11) ==  NULL, "ft_strnstr(\"Hello World\", \"!\", 11)           ", ft_strnstr(str, "!", 11), NULL);
+	test_result(ft_strnstr(str, "Hello World", 11) == str, "ft_strnstr(\"Hello World\", \"Hello World\", 11) ", ft_strnstr(str, "Hello World", 11), str);
+	test_result(ft_strnstr(str, "Hello", 5) == str, "ft_strnstr(\"Hello World\", \"Hello\", 5)        ", ft_strnstr(str, "Hello", 5), str);
+
 
 	return (0);
 }
