@@ -15,6 +15,7 @@ I'm not an École 42 cadet, but I decided to write my own libft.
 | --- |  
 | 📑 [Roadmap](./docs/roadmap.md) |
 | 📚 [Dive Into Systems: 1. By the C, the Beautiful C](https://diveintosystems.org/book/C1-C_intro/index.html) |
+| 📚 [Dive Into Systems: 2. A Deeper Dive into C Programming](https://diveintosystems.org/book/C2-C_depth/index.html)
 
 </div>
 
