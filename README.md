@@ -1,8 +1,28 @@
-# notlibft
+<div align="center">
+<h1>notlibft</h1>
+<br/>
+I'm not an École 42 cadet, but I decided to write my own libft. 
+<br/>
+<br/>
+✨ <em>Because why not?</em> ✨
+<br/>
+<br/>
+</div>
 
-I'm not an École 42 cadet, but I decided to write my own libft. Because why not?
+<div align="center">
 
-✨ [Roadmap](./docs/roadmap.md)
+| Roadmap and learning resources |
+| --- |  
+| 📑 [Roadmap](./docs/roadmap.md) |
+| 📚 [Dive Into Systems: 1. By the C, the Beautiful C](https://diveintosystems.org/book/C1-C_intro/index.html) |
+
+</div>
+
+***
 
 > [!NOTE]
 > For Windows ~ please note this requires WSL to run the Makefile, or MinGW/Cygwin (with minor adjustments).
+
+<div align="center">
+<sub><em>I haven't done the Makefile yet.</em></sub>
+</div>
