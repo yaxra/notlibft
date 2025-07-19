@@ -5,6 +5,7 @@
 #define RED     "\033[0;31m"
 #define RESET   "\033[0m"
 
+// test string results based on char pointer result/expected value
 void test_resultc(int condition, const char* message, const char* result, const char* expected) {
     if (condition) {
         if (result != NULL) {

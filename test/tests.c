@@ -392,12 +392,19 @@ int main(void)
 	char ft_strlcat5[20] = "Hello World!";
 	char ft_strlcat6[20] = "Hello World!";
 
-	test_result(ft_strlcat(ft_strlcat1, " World", 20) == 11, "ft_strlcat(ft_strlcat, \" World\", 20) ", ft_strlcat(ft_strlcat1, " World", 20), 11);
-	test_result(ft_strlcat(ft_strlcat2, "!", 20) == 12, "ft_strlcat(ft_strlcat2, \"!\", 20)     ", ft_strlcat(ft_strlcat2, "!", 20), 12);
-	test_result(ft_strlcat(ft_strlcat3, "Hello", 20) == 17, "ft_strlcat(ft_strlcat3, \"Hello\", 20) ", ft_strlcat(ft_strlcat3, "Hello", 20), 17);
-	test_result(ft_strlcat(ft_strlcat4, "Hello", 5) == 10, "ft_strlcat(ft_strlcat4, \"Hello\", 5)  ", ft_strlcat(ft_strlcat4, "Hello", 5), 10);
-	test_result(ft_strlcat(ft_strlcat5, "Hello", 0) == 5, "ft_strlcat(ft_strlcat5, \"Hello\", 0)  ", ft_strlcat(ft_strlcat5, "Hello", 0), 5);
-	test_result(ft_strlcat(ft_strlcat6, "Hello", 1) == 6, "ft_strlcat(ft_strlcat6, \"Hello\", 1)  ", ft_strlcat(ft_strlcat6, "Hello", 1), 6);
+	size_t result1 = ft_strlcat(ft_strlcat1, " World", 20);
+	test_result(result1 == 11, "ft_strlcat(ft_strlcat1, \" World\", 20)", result1, 11);
+	size_t result2 = ft_strlcat(ft_strlcat2, "!", 20);
+	test_result(result2 == 12, "ft_strlcat(ft_strlcat2, \"!\", 20)     ", result2, 12);
+    size_t result3 = ft_strlcat(ft_strlcat3, "Hello", 20);
+    test_result(result3 == 17, "ft_strlcat(ft_strlcat3, \"Hello\", 20) ", result3, 17);
+    size_t result4 = ft_strlcat(ft_strlcat4, "Hello", 5);
+    test_result(result4 == 10, "ft_strlcat(ft_strlcat4, \"Hello\", 5)  ", result4, 10);
+    size_t result5 = ft_strlcat(ft_strlcat5, "Hello", 0);
+    test_result(result5 == 5, "ft_strlcat(ft_strlcat5, \"Hello\", 0)  ", result5, 5);
+    size_t result6 = ft_strlcat(ft_strlcat6, "Hello", 1);
+    test_result(result6 == 6, "ft_strlcat(ft_strlcat6, \"Hello\", 1)  ", result6, 6);
+	
 	color_string("ft_strlcat tests completed.");
 	printf("\n");
 	// All Basic Character / String Functions tests completed

@@ -5,6 +5,7 @@
 #define RED     "\033[0;31m"
 #define RESET   "\033[0m"
 
+// test string results based on int result/expected value
 void test_result(int condition, const char* message, int result, int expected) {
     if (condition) {
         printf(GREEN "[+] " RESET "%s: %d (Expected: %d)\n", message, result, expected);

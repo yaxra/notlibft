@@ -22,7 +22,7 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
-
+build/
 .vs/
 
 .history/

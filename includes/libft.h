@@ -3,7 +3,8 @@
 
 #include <stdlib.h>
 
-void   test_result(int condition, const char* message, int result, const char* expected);
+void   test_result(int condition, const char* message, int result, int expected);
+void   test_resultc(int condition, const char* message, const char* result, const char* expected);
 void   color_string(const char* message);
 
 int    ft_isalpha(int c);
