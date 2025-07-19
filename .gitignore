@@ -23,6 +23,7 @@ bld/
 [Ll]ogs/
 
 build/
+lib/
 .vs/
 
 .history/
